@@ -1,0 +1,33 @@
+#/lib/systemd/system/KTProxGateServer.service
+# systemctl start KTProxGateServer.service
+### 프로그램 시작
+# systemctl start KTProxGateServer.service
+### 프로그램 정지
+# systemctl stop KTProxGateServer.service
+### 부팅시 시작 활성화
+# systemctl enable KTProxGateServer.service
+# systemctl status KTProxGateServer.service
+[Unit]
+Description=KTProxGateServer Web 
+After=network.target
+ 
+[Service]
+Type=simple
+### EDIT ### start
+StandardOutput=ywis_web_log
+StandardError=ywis_web_log
+SyslogIdentifier=ywis_web_log
+User=pi
+WorkingDirectory=/home/pi/EncoSys
+#Environment='JAVA_OPT1=-Djava.security.egd=file:/dev/urandom'
+#Environment='JAVA_OPT2=-server -XX:MaxNewSize=384m -XX:+UseParallelGC -XX:ParallelGCThreads=2'
+Environment='EXEC_JAR=EncoImageTrnasServer-1.0.war'
+### EDIT ### end
+ExecStart=/usr/bin/java -jar $EXEC_JAR
+SuccessExitStatus=143
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=10
+ 
+[Install]
+WantedBy=multi-user.target

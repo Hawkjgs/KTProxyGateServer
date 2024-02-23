@@ -1,0 +1,66 @@
+
+
+.mouserOver:hover {
+	background-color: #ebd730;
+	cursor: pointer;
+}
+
+table.category {
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	align: top;
+}
+table.category tr td {
+	border-bottom: 1px #d3d3d3 solid;
+	padding: 1px 1px;
+	align: top;
+}
+
+table.search { width:98%; background-image:url(../img/com/admin_search_bg.gif); margin:0px 0px 15px 0px; }
+table.search input, table.search img, table.search select{vertical-align:top;}
+
+
+.btn_r { width:98%; text-align:right; padding:0px 0px 10px 0px; }
+.btn_l { width:98%; text-align:left; padding:0px 0px 10px 0px; }
+.btn_c { width:98%; text-align:center; padding:0px 0px 10px 0px; }
+
+table.wlist {width:1050px;}
+table.wlist tr th { background-color:#f7f7f7; border-top:3px #b9b9b9 solid; border-bottom:1px #d3d3d3 solid; text-align:center; padding:10px 6px;}
+table.wlist tr td { border-bottom:1px #d3d3d3 solid; text-align:center; padding:4px 3px;}
+
+table.list { width:98%;}
+table.list tr th { background-color:#f7f7f7; border-top:3px #b9b9b9 solid; border-bottom:1px #d3d3d3 solid; text-align:center; padding:10px 6px;}
+table.list tr td { border-bottom:1px #d3d3d3 solid; text-align:center; padding:4px 3px;}
+
+table.list_num { width:98%; margin:25px 0px 25px 0px; }
+table.list_num table { width:260px; }
+table.list_num table tr td { text-align:center; }
+
+table.write { width:1000px;  border-top:3px #b9b9b9 solid; margin:0px 0px 15px 0px; }
+table.write tr th { background-color:#f7f7f7; border-bottom:1px #d3d3d3 solid; padding:7px;}
+table.write tr td { border-bottom:1px #d3d3d3 solid; padding:4px 7px;}
+
+table.write2 { width:1024px;  border-top:3px #b9b9b9 solid; margin:0px 0px 15px 0px; }
+table.write2 tr th { background-color:#f7f7f7; border-bottom:1px #d3d3d3 solid; padding:7px;}
+table.write2 tr td { border-bottom:1px #d3d3d3 solid; padding:4px 7px;}
+
+
+
+.extra_db { width:900px; height:200px; overflow:scroll; text-align:justify; margin-bottom:15px;}
+.sample_db { float:left; width:590px; margin-left:10px; overflow:auto; text-align:justify;}
+
+table.div_dash4 { width:180px;   margin:0px 0px 0px 0px; }
+table.div_dash { width:450px;   margin:0px 0px 15px 0px; }
+table.div_dash tr th { background-color:#f7f7f7; border-bottom:1px #d3d3d3 solid; padding:7px;}
+table.div_dash tr td { border-bottom:1px #d3d3d3 solid; padding:4px 7px;}
+
+table.div_dash_5 tr th { background-color:#f7f7f7; border-bottom:1px #d3d3d3 solid; padding:7px;}
+table.div_dash_5 tr td { border-bottom:1px #d3d3d3 solid; padding:4px 7px;}
+
+table.div_dash_1 { width:780px;   margin:0px 0px 0px 0px; }
+table.div_dash_1 tr th { background-color:#f7f7f7; border-bottom:1px #d3d3d3 solid; padding:7px;}
+table.div_dash_1 tr td { border-bottom:1px #d3d3d3 solid; padding:4px 7px;}
+
+table.div_dash_2 { width:380px;   margin:0px 0px 15px 0px; }
+table.div_dash_2 tr th { background-color:#f7f7f7; border-bottom:1px #d3d3d3 solid; padding:7px;}
+table.div_dash_2 tr td { border-bottom:1px #d3d3d3 solid; padding:4px 7px;}

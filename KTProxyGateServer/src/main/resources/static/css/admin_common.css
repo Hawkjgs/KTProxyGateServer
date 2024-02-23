@@ -1,0 +1,102 @@
+@import url("admin_board.css");
+@import url("admin_template.css");
+
+
+
+/* CSS Document */
+body {
+	margin: 0px;
+	padding: 0px;
+	font-size:12px;
+	line-height: 120%;
+	letter-spacing: 0em;
+	font-family:sans-serif;
+	color:#666666;
+	border:0px;
+}
+
+ 
+table {
+	padding:0px;
+	margin:0px;
+	border:0px;
+	}
+
+a {	 
+	text-decoration: none;} 
+	a.on {
+	color: #7468ff;
+	}
+table tr.on {
+	background-color:#f5f5f5;
+}
+	
+li { list-style:none; } 
+
+img { border:0px; vertical-align:middle; }
+
+input { border:1px #d5d5d5 solid; }
+
+
+
+/*Layout*/	
+.toparea { min-width:1300px; width:100%;background-image:url(../img/com/admin_top_bg.gif); }
+.toplogout { text-align:right; padding:0px 20px 0px 0px; height:20px; font-size:11px;}
+.toplogo { height:68px; width:165px; padding:0px 0px 0px 13px;}
+div.topmenu { width:100%; margin:26px 0px 0px 0px; padding:0px; position: relative;  }
+div.topmenu2 { width:98%; margin:30px 0px 0px 0px; padding:0px; position: relative; float:left; border-bottom:3px solid #8a723f; }
+div.topmenu ul, div.topmenu2 ul { text-align:center; font-size:13px; display:inline; }
+div.topmenu li, div.topmenu2 li { height:31px;background-image:url(../img/com/admin_top_off_02.gif); background-position:right; background-repeat:no-repeat; float:left; /* padding:12px 0px 5px 0px; */}
+div.topmenu li a, div.topmenu2 li a {display:block;height:31px;background-image:url(../img/com/admin_top_off_01.gif); background-position:left; background-repeat:no-repeat; color:#544310; /* padding:12px 17px 5px 17px; */padding:0px 17px; margin:0px;line-height:31px;text-align:center;}
+div.topmenu li.current, div.topmenu2 li.current { height:31px;background-image:url(../img/com/admin_top_on_02.gif); background-position:right; background-repeat:no-repeat; float:left;  /* padding:12px 0px 5px 0px; */}
+div.topmenu li.current a, div.topmenu2 li.current a { display:block;background-image:url(../img/com/admin_top_on_01.gif); background-position:left; background-repeat:no-repeat; color:#fff; font-weight:bold; /* padding:12px 17px 5px 17px; */ padding:0px 17px; margin:0px;line-height:31px;text-align:center;}
+
+
+.middle {  height:98%; width:100%; clear:both; }
+.left_area { background-image:url(../img/left/left_bg.gif); padding:0px; margin:0px; width:150px; height:100%; vertical-align:top; }
+.left_sub_on { background-image:url(../img/left/left_on.gif); background-repeat:no-repeat; background-position:130px 3px; text-align:right; padding:2px 23px; }
+.left_sub_off { background-image:url(../img/left/left_off.gif); background-repeat:no-repeat; background-position:130px 3px; text-align:right; padding:2px 23px;  }
+
+.con { vertical-align:top; }
+.title { background-image:url(../img/com/admin_tit_bg.gif); width:100%; height:44px; }
+.tit { background-image:url(../img/com/admin_tit_ic.gif); background-repeat:no-repeat; background-position:20px 17px; padding:0px 0px 0px 35px; font-size:14px; font-weight:bold; letter-spacing:1; }
+
+.contents { width:1000px; height:200px; padding:0px 0px 0px 18px; margin:0px 0px 0px 0px; }
+.contents_dash { width:1200px; height:200px; padding:0px 0px 0px 18px; margin:0px 0px 0px 0px; }
+.contents2 {min-width:1000px; width:98%; height:200px; padding:0px 0px 0px 18px; margin:0px 0px 0px 0px; }
+
+.bottom {background-color:#f5f5f5; padding:5px; text-align:center; font-size:11px; }
+.left_area_bottom { background-color:#f5f5f5; padding:0px; margin:0px; width:150px; height:100%; vertical-align:top; }
+
+
+#wait_div {display: none; left: 0;  position: absolute; top: 0;width: 100%; z-index: 200; background: url("/mpns/img/com/bg_pop.png") repeat scroll 0 0 transparent;}  
+#wait_div .wait_img {left: 50%;  position: fixed;  top: 50%;}
+
+div.dashborad_box { width:100%; margin:10px 0px 0px 0px; padding:0px; position: relative;  }
+div.dashboard4 { width:200px; height:150px; margin:10px 10px 0px 0px; padding:0px; position: relative; float:left; border:1px solid #8a723f; }
+div.dashboard { width:450px; height:400px; margin:10px 10px 0px 0px; padding:0px; position: relative; float:left; border:1px solid #8a723f; }
+
+div.dashboard2 { width:450px; min-height:200px; margin:5px 5px 0px 0px; padding:0px; position: relative; float:left; border:1px solid #8a723f; }
+div.dashboard5 { width:220px; min-height:200px; margin:5px 5px 0px 0px; padding:0px; position: relative; float:left; border:1px solid #8a723f; }
+
+div.dashboard_1{ width:785px; min-height:200px; margin:5px 5px 0px 0px; padding:0px; position: relative; float:left; border:1px solid #8a723f; }
+div.dashboard_2 { width:390px; min-height:200px; margin:5px 5px 0px 0px; padding:0px; position: relative; float:left; border:1px solid #8a723f; }
+
+
+
+div.dashboard1 { width:450px; height:150px; margin:5px 5px 0px 0px; padding:0px; position: relative; border:1px solid #8a723f; }
+
+div.dashboard3 { width:450px; height:300px; margin:5px 5px 0px 0px; padding:0px; position: relative; float:left; border:1px solid #8a723f; }
+.center_img  {  text-align:center;  }
+
+div.dashboard_prj { width:450px; height:280px; margin:5px 5px 0px 0px; padding:0px; position: relative; float:left; border:1px solid #8a723f; }
+
+ 
+div.submenu { width:98%;min-width:1000px; margin:10px 0px 10px 0px; padding:0px; position: relative; float:left; border-bottom:3px solid #8a723f; }
+div.submenu ul, div.submenu ul { text-align:center; font-size:13px; display:inline; }
+div.submenu li, div.submenu li {height:31px; background-image:url(../img/com/admin_top_off_02.gif); background-position:right; background-repeat:no-repeat; float:left; /* padding:12px 0px 5px 0px; */}
+div.submenu li a, div.submenu li a {display:block;height:31px;background-image:url(../img/com/admin_top_off_01.gif); background-position:left; background-repeat:no-repeat; color:#544310; /* padding:12px 17px 5px 17px; */padding:0px 17px; margin:0px; text-align:center; line-height:31px;}
+div.submenu li.current, div.submenu li.current { height:31px;background-image:url(../img/com/admin_top_on_02.gif); background-position:right; background-repeat:no-repeat; float:left;  /* padding:12px 0px 5px 0px; */}
+div.submenu li.current a, div.submenu li.current a { display:block; height:31px;background-image:url(../img/com/admin_top_on_01.gif); background-position:left; background-repeat:no-repeat; color:#fff; font-weight:bold; /* padding:12px 17px 5px 17px; */ padding:0px 17px; margin:0px; text-align:center; line-height:31px;}
+
+form{margin:0px;}

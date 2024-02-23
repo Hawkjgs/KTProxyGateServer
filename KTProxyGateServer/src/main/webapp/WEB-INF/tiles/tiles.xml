@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+  
+  <definition name="layouts-login" template="/WEB-INF/jsp/layouts/layouts-login.jsp">
+  <put-attribute name="content"   value="" />
+ </definition>
+  <definition name="layouts-api" template="/WEB-INF/jsp/layouts/layouts-api.jsp">
+  	<put-attribute name="content"   value="" />
+  	 <put-attribute name="footer"   value="" />
+    <put-attribute name="header"   value="" />
+ </definition>
+  
+  <definition name="layouts-admin" template="/WEB-INF/jsp/layouts/layouts-tiles.jsp">
+  	<put-attribute name="content"   value="" />
+  	 <put-attribute name="footer"   value="" />
+    <put-attribute name="header"   value="" />
+    <put-attribute name="leftmenu"   value="" />
+    
+ </definition>
+  
+  
+ <definition name="layouts-popup" template="/WEB-INF/jsp/layouts/layouts-popup.jsp">
+  <put-attribute name="content"   value="" /> 
+ </definition>
+ 
+  
+<definition name="login/*" extends="layouts-login">
+  <put-attribute name="content"   value="/WEB-INF/jsp/login/{1}.jsp" />
+</definition>
+<definition name="api/*" extends="layouts-api">
+  <put-attribute name="header"   value="/WEB-INF/jsp/common/header.jsp" />
+  <put-attribute name="footer"   value="/WEB-INF/jsp/common/footer.jsp" />
+  
+  <put-attribute name="content"   value="/WEB-INF/jsp/api/{1}.jsp" />
+  
+</definition>
+
+
+<definition name="popup/*" extends="layouts-popup">
+  
+  <put-attribute name="content"   value="/WEB-INF/jsp/popup/{1}.jsp" />
+ </definition>
+    
+    
+
+<definition name="admin/*" extends="layouts-admin">
+ <put-attribute name="leftmenu"   value="/WEB-INF/jsp/common/menu_left.jsp" />
+  <put-attribute name="header"   value="/WEB-INF/jsp/common/header_admin.jsp" />
+  <put-attribute name="footer"   value="/WEB-INF/jsp/common/footer.jsp" />
+  
+  <put-attribute name="content"   value="/WEB-INF/jsp/admin/{1}.jsp" />
+  
+</definition>
+
+<definition name="error/*" extends="layouts-login">
+       <put-attribute name="content" value="/WEB-INF/jsp/errors/{1}.jsp" />
+   </definition>
+   
+
+</tiles-definitions>
